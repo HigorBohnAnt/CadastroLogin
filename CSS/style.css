@@ -1,0 +1,122 @@
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #2fdfeb, #590c8d);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Formulário com borda sólida e aparência de moldura */
+form {
+    background: #fff;
+    padding: 40px 30px;
+    border: 3px solid #5b86e5;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Campos de input com estilo mais robusto */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: 0.3s ease;
+    font-family: 'Georgia', serif;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #36d1dc;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(54, 209, 220, 0.5);
+    outline: none;
+}
+
+/* Botão de envio com aparência mais sólida e "botão físico" */
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 15px;
+    background: linear-gradient(135deg, #2fdfeb, #590c8d);
+    border: 2px solid #2e638b;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    font-family: 'Georgia', serif;
+}
+
+form input[type="submit"]:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* Botão alternativo para login */
+form a button {
+    margin-top: 15px;
+    background: none;
+    border: 2px solid #36d1dc;
+    color: #36d1dc;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    transition: 0.3s ease;
+}
+
+form a button:hover {
+    background: #36d1dc;
+    color: white;
+    transform: scale(1.02);
+}
+
+/* Mensagens de erro com estilo chamativo */
+p {
+    font-size: 14px;
+    color: darkred;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    margin-top: 10px;
+}
+.input-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.toggle-eye {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #000000;
+}
+
